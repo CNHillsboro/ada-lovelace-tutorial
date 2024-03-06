@@ -59,3 +59,8 @@ controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass3)
 ```
+
+
+```package
+arcade-text=github:microsoft/arcade-text
+```

@@ -93,8 +93,8 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . f f b b f f . . . . . 
         `)
 })
-let fact_check = 0
 let mySprite: Sprite = null
+let fact_check = 0
 let textSprite = textsprite.create("Ada Lovelace", 15, 1)
 textSprite.setPosition(50, 9)
 let adaLovelace = sprites.create(img`
@@ -247,6 +247,7 @@ game.showLongText("Explore the maze to learn about me! And learn all 5 facts!", 
 sprites.destroy(textSprite)
 sprites.destroy(adaLovelace)
 tiles.setCurrentTilemap(tilemap`level1`)
+fact_check = 0
 mySprite = sprites.create(img`
     . . . . . . f f f f 4 4 f . . . 
     . . . . f f b f 5 4 5 5 4 f . . 
@@ -268,4 +269,3 @@ mySprite = sprites.create(img`
 scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass3)
-fact_check = 0
